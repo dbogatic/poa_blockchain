@@ -1,2 +1,2 @@
 # poa_blockchain
-Proof of Authority (PoA blockchain simulation using Geth
+Proof of Authority (PoA) blockchain simulation using Geth
