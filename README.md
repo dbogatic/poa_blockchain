@@ -5,7 +5,7 @@
 The goal of this repo is to show steps needed to set up a testnet blockchain for an organization using Geth and to simulate a crypto transaction on the ETH network via MyCrypto application. To do this, we will need to:
 
 
-* Set up a custom testnet blockchain using [Geth](https://geth.ethereum.org/)
+* Set up a custom testnet blockchain using [Geth](https://geth.ethereum.org/).
 
 
 * Send a test transaction.
@@ -68,10 +68,20 @@ In order to setup our testnet blockchain we will use:
 
     * The setup process includes selecting passwords for access to Node1 and Node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each Node.
 
-* [PoA](imagesSrceen_Shot8.png)
+* ![PoA](images/Screen_Shot8.png)
+Image Source:[Rice Bootcamp](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020)
 
+    * You should keep the account Private Key always in a secure location and not allow access to it to anyone.
 
+* ![keystore](images/Screen_Shot9.png)
 
+    * The password we set in the above step for each Node we will use when we start the blockchain.
+
+* ![password](images/Screen_Shot10.png)
+
+#
+### Send a Test Transaction
+#
 
 
 
