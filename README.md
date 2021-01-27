@@ -37,19 +37,38 @@ In order to setup our testnet blockchain we will use:
 
 * Geth, a command-line tool, to create keys, initialize nodes, and connect the nodes together.
 
-    * We use the following two lines of code to initialize Node1 and Node2 that will interact in our blockchain.
+    * We use the following two lines of code to setup Node1 and Node2 that will interact in our blockchain.
 
     * `./geth account new --datadir node1`
+    * `./geth account new --datadir node2`
+
+* ![NodeSetup](images/Screen_Shot7.png)
+
+    Next, we initialize the nodes we created:
+
+    * `./geth init dragancoin.json --datadir node1`
 
 * ![Node1](images/Screen_Shot5.png)
 
-    * `./geth account new --datadir node2`
+    * `./geth init dragancoin.json --datadir node2`
 
 * ![Node2](images/Screen_Shot6.png)
 
 * Setup the Clique Proof of Authority consensus algorithm.
-#
 
+    * A consensus algorithm is a procedure through which all the peers of the Blockchain network reach a common agreement about the present state of the distributed ledger. [Source: Geeks for Geeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
+
+    * There are [three](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/) consensus algorithms currently in use:
+    
+        * PoA (Proof of Authority) 
+        * PoW (Proof of Work)
+        * PoS (Proof of Stake)
+
+    * In this case we will use PoA consensus algorithm which is setup once we initiated Node1 and Node2. 
+
+    * The setup process includes selecting passwords for access to Node1 and Node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each Node.
+
+* [PoA](imagesSrceen_Shot8.png)
 
 
 
