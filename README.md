@@ -36,7 +36,7 @@ In order to setup our testnet blockchain we need to:
 
     ![puppeth2](images/Screen_Shot2.png)
 
-    * Lastly, we will set a custom network id (we chose a random number 670) and export our network (we can ignore the error messages because we only need files that were created to setup our nodes)
+    * Lastly, we will set a custom network id (we chose a random number 670) and export our network (we can ignore the error messages because we only need files that were created to setup our nodes).
 
     ![puppeth3](images/Screen_Shot3.png)
     ![puppeth4](images/Screen_Shot4.png)
@@ -73,7 +73,7 @@ In order to setup our testnet blockchain we need to:
 
     * In this case we will use PoA consensus algorithm which is setup once we initiated node1 and node2. 
 
-    * The setup process includes selecting passwords for access to Node1 and Node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each Node.
+    * The setup process includes selecting passwords for access to Node1 and Node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each node.
 
 * ![PoA](images/Screen_Shot8.png)
 Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
@@ -88,7 +88,7 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
     * `./geth --datadir node1 --unlock "0x2AfA4Bee82ddAE1467C27E56291C60d71D6A590F" --mine --rpc --allow-insecure-unlock`
 
-    * The password we set when we initialized each Node we use when we start the blockchain.
+    * The password we set when we initialized each node we use when we start the blockchain.
 
 * ![unlock_mining](images/Screen_Shot5.png)
 
