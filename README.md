@@ -73,7 +73,7 @@ In order to setup our testnet blockchain we need to:
 
     * In this case we will use PoA consensus algorithm which is setup once we initiated node1 and node2. 
 
-    * The setup process includes selecting passwords for access to Node1 and Node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each node.
+    * The setup process includes selecting passwords for access to node1 and node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each node.
 
 * ![PoA](images/Screen_Shot8.png)
 Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
@@ -82,7 +82,7 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 #
 ### Send a Test Transaction
 #
-* Once we setup our node 1 and node 2, created passwords and initiated Nodes, we can start the blockchain. We do this by opening two terminals, where the first will be our mining node 1 and the second one will be the transaction node 2.
+* Once we setup our node1 and node2, created passwords and initiated Nodes, we can start the blockchain. We do this by opening two terminals, where the first will be our mining node1 and the second one will be the transaction node2.
 
     * Starting the mining node1:
 
@@ -98,7 +98,7 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
     * `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://8bc17ba265a66c4f0e789d2c7a0b59dd7bcae19e350fce3fa30c1eb6732c96f19c3a17cdc1e3392ceb5d8ec88f80fec5200aad40df1bdf0bc9fff277dc949944@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
-    *  We can find node1 [enode](https://eth.wiki/en/fundamentals/enode-url-format) value in the mining terminal when we activate it. Also, we can see that node 1 is using 30303 port while we assign port 30304 to node2.
+    *  We can find node1 [enode](https://eth.wiki/en/fundamentals/enode-url-format) value in the mining terminal when we activate it. Also, we can see that node1 is using 30303 port while we assign port 30304 to node2.
 
 * ![enode](images/Screen_Shot16.png)
 
@@ -116,8 +116,8 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
 * ![custom_node](images/Screen_Shot13.png)
 
-* Now we can send a transaction from the node1 to node 2.
-    * First, we need to access the account by accessing our private key in the keystore folder and input the password for Node1 account. 
+* Now we can send a transaction from the node1 to node2.
+    * First, we need to access the account by accessing our private key in the keystore folder and input the password for node1 account. 
 
 * ![private_key](images/Screen_Shot19.png)
 
