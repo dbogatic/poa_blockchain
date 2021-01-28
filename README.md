@@ -97,7 +97,7 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
     * Starting the transaction Node2:
 
-* `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://97b3c74f436ec65417386497c8e88e0d5590dd16d1d0112306df56e65b45b4d12bc21fb00fa6f99b657ba8269867e043aee862b6d0812beb1685d0c9620caa2c@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
+* `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://8bc17ba265a66c4f0e789d2c7a0b59dd7bcae19e350fce3fa30c1eb6732c96f19c3a17cdc1e3392ceb5d8ec88f80fec5200aad40df1bdf0bc9fff277dc949944@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
     *  We can find Node1 enode value in the mining terminal when we activate it. Also, we can see that Node 1 is using 30304 port while we assign port 30304 to Node2.
 
