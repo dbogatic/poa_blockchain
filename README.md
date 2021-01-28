@@ -1,4 +1,4 @@
-#
+
 # Proof of Authority (PoA) Blockchain 
 
 ![blockchain](images/blockchain.png)Source:[Pixabay](https://pixabay.com/vectors/blockchain-cryptocurrency-network-3277336/#)
@@ -95,7 +95,7 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
 * ![mining_node1](images/Screen_Shot11.png)
 
-    * Starting the transaction Node2:
+* Starting the transaction Node2:
 
 * `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://97b3c74f436ec65417386497c8e88e0d5590dd16d1d0112306df56e65b45b4d12bc21fb00fa6f99b657ba8269867e043aee862b6d0812beb1685d0c9620caa2c@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
@@ -141,7 +141,7 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
 * ![transaction_pending](images/Screen_Shot20.png)
 
-![transaction_complete]()
+* ![transaction_complete]()
 
 
 
