@@ -1,9 +1,9 @@
 
 # Proof of Authority (PoA) Blockchain 
 
-![blockchain](images/blockchain.png)Source:[Pixabay](https://pixabay.com/vectors/blockchain-cryptocurrency-network-3277336/#)
+![blockchain](images/blockchain.png)Source: [Pixabay](https://pixabay.com/vectors/blockchain-cryptocurrency-network-3277336/#)
 #
-Blockchain is a distributed decentralized network that provides immutability, privacy, security, and transparency. There is no central authority present to validate and verify the transactions, yet every transaction in the Blockchain is considered to be completely secured and verified. This is possible only because of the presence of the consensus protocol which is a core part of any Blockchain network. Source:[GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
+Blockchain is a distributed decentralized network that provides immutability, privacy, security, and transparency. There is no central authority present to validate and verify the transactions, yet every transaction in the Blockchain is considered to be completely secured and verified. This is possible only because of the presence of the consensus protocol which is a core part of any Blockchain network. Source: [GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
 
 This repository describes necessary steps to setup a testnet blockchain for an organization using Geth as well as to simulate a crypto transaction on the ETH network via MyCrypto application. The three main steps are:
 
@@ -13,7 +13,7 @@ This repository describes necessary steps to setup a testnet blockchain for an o
 
 * Send a test transaction.
 
-* Verify that test transaction was recorded in our blockchain and registered in our [MyCrypto](https://mycrypto.com/account) wallet.
+* Verify that test transaction was recorded in our blockchain and registered in our [MyCrypto](https://mycrypto.com/account) account.
 
 #
 ### Setup a Proof of Authority (PoA) Blockchain with Geth
@@ -22,21 +22,21 @@ In order to setup our testnet blockchain we need to:
 
 * Download and install [Geth](https://geth.ethereum.org/downloads/) into Blockchain-Tools folder.
 
-* Next we use puppeth, to name our network and generate the initial genesis block. The following steps will accomplish this:
+* Next, we use puppeth, to name our network and generate the initial genesis block. The following steps will accomplish this:
 
     * We name the network (in this case we named it dragancoin).
 
-*  `./puppeth`
+    *  `./puppeth`
 
     ![puppeth](images/Screen_Shot1.png)
 
     * Then, we configure the new genesis by selecting a consensus algorithm (in our case we use Proof of Authority).
 
-    * We also select accounts that will be included in the blockchain and decide if they should be pre-funded.
+    * We also select accounts (nodes) that will be included in the blockchain and decide if they should be pre-funded.
 
     ![puppeth2](images/Screen_Shot2.png)
 
-    * Lastly, we will set a custom network id (we chose a random number 670) and export our network (we can ignore the error messages because we only need files that were created to setup our Nodes)
+    * Lastly, we will set a custom network id (we chose a random number 670) and export our network (we can ignore the error messages because we only need files that were created to setup our nodes)
 
     ![puppeth3](images/Screen_Shot3.png)
     ![puppeth4](images/Screen_Shot4.png)
@@ -44,14 +44,14 @@ In order to setup our testnet blockchain we need to:
 
 * Use Geth, a command-line tool, to create keys, initialize nodes, and connect the nodes together.
 
-    * We use the following two lines of code to setup Node1 and Node2 that will interact in our blockchain.
+    * We use the following two lines of code to setup node1 and node2 that will interact in our blockchain.
 
     * `./geth account new --datadir node1`
     * `./geth account new --datadir node2`
 
 * ![NodeSetup](images/Screen_Shot7.png)
 
-    Next, we initialize the nodes we created:
+    * Next, we initialize the nodes we created:
 
     * `./geth init dragancoin.json --datadir node1`
 
@@ -61,7 +61,7 @@ In order to setup our testnet blockchain we need to:
 
 * ![Node2](images/Screen_Shot10.png)
 
-* Setup the Clique Proof of Authority consensus algorithm.
+* Setup the Clique Proof of Authority (PoA) consensus algorithm.
 
     * A consensus algorithm is a procedure through which all the peers of the Blockchain network reach a common agreement about the present state of the distributed ledger. Source: [GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
 
@@ -71,23 +71,22 @@ In order to setup our testnet blockchain we need to:
         * PoW (Proof of Work)
         * PoS (Proof of Stake)
 
-    * In this case we will use PoA consensus algorithm which is setup once we initiated Node1 and Node2. 
+    * In this case we will use PoA consensus algorithm which is setup once we initiated node1 and node2. 
 
     * The setup process includes selecting passwords for access to Node1 and Node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each Node.
 
 * ![PoA](images/Screen_Shot8.png)
-Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
+Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
 
-    * You should keep the account Private Key always in a secure location and not allow access to it to anyone (the image above is a sample image, yours will have different values).
-
+    * We should keep the account Private Key always in a secure location and not allow access to it to anyone (the image above is a sample image).
 #
 ### Send a Test Transaction
 #
-* Once we setup our Node 1 and Node 2, created passwords and initiated Nodes, we can start the blockchain. We do this by opening two terminals, where the first will be our mining Node 1 and the second one will be the transaction Node 2.
+* Once we setup our node 1 and node 2, created passwords and initiated Nodes, we can start the blockchain. We do this by opening two terminals, where the first will be our mining node 1 and the second one will be the transaction node 2.
 
-    * Starting the mining Node1:
+    * Starting the mining node1:
 
-* `./geth --datadir node1 --unlock "0x2AfA4Bee82ddAE1467C27E56291C60d71D6A590F" --mine --rpc --allow-insecure-unlock`
+    * `./geth --datadir node1 --unlock "0x2AfA4Bee82ddAE1467C27E56291C60d71D6A590F" --mine --rpc --allow-insecure-unlock`
 
     * The password we set when we initialized each Node we use when we start the blockchain.
 
@@ -95,35 +94,34 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
 * ![mining_node1](images/Screen_Shot6.png)
 
-    * Starting the transaction Node2:
+    * Starting the transaction node2:
 
-* `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://8bc17ba265a66c4f0e789d2c7a0b59dd7bcae19e350fce3fa30c1eb6732c96f19c3a17cdc1e3392ceb5d8ec88f80fec5200aad40df1bdf0bc9fff277dc949944@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
+    * `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://8bc17ba265a66c4f0e789d2c7a0b59dd7bcae19e350fce3fa30c1eb6732c96f19c3a17cdc1e3392ceb5d8ec88f80fec5200aad40df1bdf0bc9fff277dc949944@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
-    *  We can find Node1 enode value in the mining terminal when we activate it. Also, we can see that Node 1 is using 30304 port while we assign port 30304 to Node2.
+    *  We can find node1 [enode](https://eth.wiki/en/fundamentals/enode-url-format) value in the mining terminal when we activate it. Also, we can see that node 1 is using 30304 port while we assign port 30304 to node2.
 
 * ![enode](images/Screen_Shot16.png)
 
-    * Next, we input our Node2 password to unlock the account.
+    * Next, we input our node2 password to unlock the account.
 
 * ![unlock_transaction](images/Screen_Shot14.png)
 
 * ![transaction_node](images/Screen_Shot12.png)
 
-    * Now we have our blockchain comprised of Node1 and Node2 up and running.
+    * Now we have our blockchain comprised of node1 and node2 up and running.
 
 * ![blockchain](images/Screen_Shot15.png)
 
-* The next step is to setup a custom network "dragancoin" and connect to it from MyCrypto account so we can initiate the transaction from Node1 to Node2.
+* The next step is to setup a custom network "dragancoin" and connect to it from MyCrypto account so we can initiate the transaction from node1 to node2.
 
 * ![custom_node](images/Screen_Shot13.png)
 
-* Now we can send a transaction from the Node1 to Node 2.
-
+* Now we can send a transaction from the node1 to node 2.
     * First, we need to access the account by accessing our private key in the keystore folder and input the password for Node1 account. 
 
 * ![private_key](images/Screen_Shot19.png)
 
-    * The private key is located in the keystore folder in Node1 and Node2. 
+    * The private key is located in the keystore folder in node1 and node2. 
 
 * ![keystore](images/Screen_Shot9.png)
 
@@ -148,7 +146,7 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
 * ![transaction_complete](images/Screen_Shot23.png)
 
-* We can see that the transaction has been processed sucsessfully on our newly created dragancoin custom network.
+* We can see that the transaction has been processed successfully on our newly created dragancoin custom network.
 #
 Sources: 
 
