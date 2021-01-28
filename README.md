@@ -1,8 +1,11 @@
 #
 # Proof of Authority (PoA) Blockchain 
 
+![blockchain](images/blockchain.png)Source:[Pixabay](https://pixabay.com/vectors/blockchain-cryptocurrency-network-3277336/#)
+#
+Blockchain is a distributed decentralized network that provides immutability, privacy, security, and transparency. There is no central authority present to validate and verify the transactions, yet every transaction in the Blockchain is considered to be completely secured and verified. This is possible only because of the presence of the consensus protocol which is a core part of any Blockchain network. Source:[GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
 
-The goal of this repo is to show steps needed to set up a testnet blockchain for an organization using Geth and to simulate a crypto transaction on the ETH network via MyCrypto application. To do this, we will need to:
+This repository describes necessary steps to setup a testnet blockchain for an organization using Geth as well as to simulate a crypto transaction on the ETH network via MyCrypto application. The three main steps are:
 
 
 * Setup a custom PoA testnet blockchain with [Geth](https://geth.ethereum.org/).
@@ -60,7 +63,7 @@ In order to setup our testnet blockchain we need to:
 
 * Setup the Clique Proof of Authority consensus algorithm.
 
-    * A consensus algorithm is a procedure through which all the peers of the Blockchain network reach a common agreement about the present state of the distributed ledger. Source: [Geeks for Geeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
+    * A consensus algorithm is a procedure through which all the peers of the Blockchain network reach a common agreement about the present state of the distributed ledger. Source: [GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
 
     * There are [three](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/) consensus algorithms currently in use:
     
@@ -143,7 +146,16 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
 
 
+#
+Sources: 
 
+[GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
+
+[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/tree/master/class/18-Blockchain/3/Activities/04-Stu_Starting_Chain)
+
+#
+
+© 2021 Author: Dragan Bogatic
 
 
 
