@@ -98,7 +98,7 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
     * `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://8bc17ba265a66c4f0e789d2c7a0b59dd7bcae19e350fce3fa30c1eb6732c96f19c3a17cdc1e3392ceb5d8ec88f80fec5200aad40df1bdf0bc9fff277dc949944@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
-    *  We can find node1 [enode](https://eth.wiki/en/fundamentals/enode-url-format) value in the mining terminal when we activate it. Also, we can see that node 1 is using 30304 port while we assign port 30304 to node2.
+    *  We can find node1 [enode](https://eth.wiki/en/fundamentals/enode-url-format) value in the mining terminal when we activate it. Also, we can see that node 1 is using 30303 port while we assign port 30304 to node2.
 
 * ![enode](images/Screen_Shot16.png)
 
