@@ -24,7 +24,7 @@ In order to setup our testnet blockchain we need to:
 
 * Next we use puppeth, to name our network and generate the initial genesis block. The following steps will accomplish this:
 
-    * We name the network (in this case we named it dragoncoin).
+    * We name the network (in this case we named it dragancoin).
 
 *  `./puppeth`
 
@@ -55,11 +55,11 @@ In order to setup our testnet blockchain we need to:
 
     * `./geth init dragancoin.json --datadir node1`
 
-* ![Node1](images/Screen_Shot5.png)
+* ![Node1](images/Screen_Shot11.png)
 
     * `./geth init dragancoin.json --datadir node2`
 
-* ![Node2](images/Screen_Shot6.png)
+* ![Node2](images/Screen_Shot10.png)
 
 * Setup the Clique Proof of Authority consensus algorithm.
 
@@ -78,7 +78,7 @@ In order to setup our testnet blockchain we need to:
 * ![PoA](images/Screen_Shot8.png)
 Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
 
-    * You should keep the account Private Key always in a secure location and not allow access to it to anyone (the image above is a sample image, yours will have different values)
+    * You should keep the account Private Key always in a secure location and not allow access to it to anyone (the image above is a sample image, yours will have different values).
 
 #
 ### Send a Test Transaction
@@ -91,25 +91,29 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
     * The password we set when we initialized each Node we use when we start the blockchain.
 
-* ![unlock_mining](images/Screen_Shot10.png)
+* ![unlock_mining](images/Screen_Shot5.png)
 
-* ![mining_node1](images/Screen_Shot11.png)
+* ![mining_node1](images/Screen_Shot6.png)
 
-* Starting the transaction Node2:
+    * Starting the transaction Node2:
 
 * `./geth --datadir node2 --unlock "0xF361A02cD0D2da4CE0076Ae96becf8497347c836" --mine --port 30304 --bootnodes "enode://97b3c74f436ec65417386497c8e88e0d5590dd16d1d0112306df56e65b45b4d12bc21fb00fa6f99b657ba8269867e043aee862b6d0812beb1685d0c9620caa2c@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
-    * We can find Node1 enode value in the mining terminal when we activate it. Also, you can see that Node 1 is using 30304 port while we assign port 30304 to Node2.
+    *  We can find Node1 enode value in the mining terminal when we activate it. Also, we can see that Node 1 is using 30304 port while we assign port 30304 to Node2.
 
-* ![unlock_transaction](images/Screen_Shot17.png)
+* ![enode](images/Screen_Shot16.png)
+
+    * Next, we input our Node2 password to unlock the account.
+
+* ![unlock_transaction](images/Screen_Shot14.png)
 
 * ![transaction_node](images/Screen_Shot12.png)
 
     * Now we have our blockchain comprised of Node1 and Node2 up and running.
 
-* ![blockchain](images/Screen_Shot16.png)
+* ![blockchain](images/Screen_Shot15.png)
 
-* Next step is to setup a custom network "dragancoin" and connect to it from MyCrypto account so we can initiate the transaction from node1 to Node2.
+* The next step is to setup a custom network "dragancoin" and connect to it from MyCrypto account so we can initiate the transaction from Node1 to Node2.
 
 * ![custom_node](images/Screen_Shot13.png)
 
@@ -125,30 +129,32 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 
     * Then, we complete the transaction details, verify it and send.
 
-* ![transaction](images/Screen_Shot14.png)
+* ![transaction](images/Screen_Shot18.png)
 
-* ![verify_transaction](images/Screen_Shot18.png)
+* ![verify_transaction](images/Screen_Shot20.png)
 
     * The transaction has been broadcasted to the blockchain network.
 
-* ![transaction_broadcast](images/Screen_Shot15.png)
+* ![transaction_broadcast](images/Screen_Shot17.png)
 
 #
 ### Verification of Transaction Completion
 #
-* The last step is to verify in MyCrypto wallet that the transaction has been processed successfully. We do this by checking the TX status.
+* The last step is to verify in MyCrypto account that the transaction has been processed successfully. We do this by checking the TX status.
 
-* ![transaction_pending](images/Screen_Shot20.png)
+* ![tx_status](images/Screen_Shot21.png)
 
-* ![transaction_complete]()
+* ![transaction_pending](images/Screen_Shot22.png)
 
+* ![transaction_complete](images/Screen_Shot23.png)
 
+* We can see that the transaction has been processed sucsessfully on our newly created dragancoin custom network.
 #
 Sources: 
 
 [GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
 
-[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/tree/master/class/18-Blockchain/3/Activities/04-Stu_Starting_Chain)
+[Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/tree/master/class/18-Blockchain/3/Activities/04-Stu_Starting_Chain)
 
 #
 
