@@ -134,16 +134,13 @@ Image Source:[Rice Bootcamp Student Activity Page](https://rice.bootcampcontent.
 * ![transaction_broadcast](images/Screen_Shot15.png)
 
 #
-## Verification of Transaction Completion
+### Verification of Transaction Completion
 #
-
 * The last step is to verify in MyCrypto wallet that the transaction has been processed successfully. We do this by checking the TX status.
 
 * ![transaction_pending](images/Screen_Shot20.png)
 
 * ![transaction_complete]()
-
-
 
 
 #
@@ -156,6 +153,6 @@ Sources:
 #
 
 © 2021 Author: Dragan Bogatic
-
+#
 
 
