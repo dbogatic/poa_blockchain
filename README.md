@@ -154,9 +154,10 @@ Sources:
 
 [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/tree/master/class/18-Blockchain/3/Activities/04-Stu_Starting_Chain)
 
+[Ethereum Wiki](https://eth.wiki/en/fundamentals/enode-url-format)
+
 #
 
 © 2021 Author: Dragan Bogatic
 #
-
 
