@@ -1,7 +1,7 @@
 #
 # Proof of Authority (PoA) Blockchain 
 
-* [Setup a Proof of Authority (PoA) Blockchain with Geth](#setup-a-proof-of-authority-(poa)-blockchain-with-geth)
+
 
 * [Send a Test Transaction](#send-a-test-transaction)
 
