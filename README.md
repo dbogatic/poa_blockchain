@@ -76,7 +76,7 @@ In order to setup our testnet blockchain we need to:
     * The setup process includes selecting passwords for access to node1 and node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each node.
 
     ![PoA](images/Screen_Shot8.png)
-Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
+Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
 
     * We should keep the account Private Key always in a secure location and not allow access to it to anyone (the image above is a sample image).
 #
@@ -108,7 +108,7 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
     ![transaction_node](images/Screen_Shot12.png)
 
-    * Now we have our blockchain comprised of node1 and node2 up and running.
+    * We have our blockchain comprised of node1 and node2 up and running.
 
     ![blockchain](images/Screen_Shot15.png)
 
