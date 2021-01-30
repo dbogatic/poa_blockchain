@@ -1,7 +1,7 @@
 #
 # Proof of Authority (PoA) Blockchain 
 
-* [Setup a Proof of Authority (PoA) Blockchain with Geth](##setup-a-proof-of-authority-(poa)-blockchain-with-geth)
+* [Setup a PoA Blockchain with Geth](#setup-a-poa-blockchain-with-geth)
 
 * [Send a Test Transaction](#send-a-test-transaction)
 
@@ -22,7 +22,7 @@ This repository describes necessary steps to setup a testnet blockchain for an o
 * Verify that test transaction was recorded in our blockchain and registered in our [MyCrypto](https://mycrypto.com/account) account.
 
 #
-### Setup a Proof of Authority (PoA) Blockchain with Geth
+### Setup a PoA Blockchain with Geth
 #
 In order to setup our testnet blockchain we need to:
 
