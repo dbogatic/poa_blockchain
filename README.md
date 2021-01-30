@@ -1,6 +1,12 @@
-
+#
 # Proof of Authority (PoA) Blockchain 
 
+* [Setup a Proof of Authority (POA) Blockchain with Geth](#setup-a-proof-of-authority-(poa)-blockchain-with-geth)
+
+* [Send a Test Transaction](#send-a-test-transaction)
+
+* [Verification of Transaction Completion](#verification-of-transaction-completion)
+#
 ![blockchain](images/blockchain.png)Source: [Pixabay](https://pixabay.com/vectors/blockchain-cryptocurrency-network-3277336/#)
 #
 Blockchain is a distributed decentralized network that provides immutability, privacy, security, and transparency. There is no central authority present to validate and verify the transactions, yet every transaction in the Blockchain is considered to be completely secured and verified. This is possible only because of the presence of the consensus protocol which is a core part of any Blockchain network. Source: [GeeksforGeeks](https://www.geeksforgeeks.org/consensus-algorithms-in-blockchain/)
