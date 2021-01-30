@@ -49,17 +49,17 @@ In order to setup our testnet blockchain we need to:
     * `./geth account new --datadir node1`
     * `./geth account new --datadir node2`
 
-* ![NodeSetup](images/Screen_Shot7.png)
+    ![NodeSetup](images/Screen_Shot7.png)
 
     * Next, we initialize the nodes we created:
 
     * `./geth init dragancoin.json --datadir node1`
 
-* ![Node1](images/Screen_Shot11.png)
+    ![Node1](images/Screen_Shot11.png)
 
     * `./geth init dragancoin.json --datadir node2`
 
-* ![Node2](images/Screen_Shot10.png)
+    ![Node2](images/Screen_Shot10.png)
 
 * Setup the Clique Proof of Authority (PoA) consensus algorithm.
 
@@ -75,7 +75,7 @@ In order to setup our testnet blockchain we need to:
 
     * The setup process includes selecting passwords for access to node1 and node2 as well as creation of Public and Secret keys, which are stored in the Keystore folder in each node.
 
-* ![PoA](images/Screen_Shot8.png)
+    ![PoA](images/Screen_Shot8.png)
 Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcampcontent.com/Rice-Coding-Bootcamp/rice-hou-fin-pt-09-2020-u-c/raw/master/class/18-Blockchain/3/Activities/03-Stu_Nodes_Accounts/Images/geth-account-new.png)
 
     * We should keep the account Private Key always in a secure location and not allow access to it to anyone (the image above is a sample image).
@@ -90,9 +90,9 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
     * The password we set when we initialized each node we use when we start the blockchain.
 
-* ![unlock_mining](images/Screen_Shot5.png)
+    ![unlock_mining](images/Screen_Shot5.png)
 
-* ![mining_node1](images/Screen_Shot6.png)
+    ![mining_node1](images/Screen_Shot6.png)
 
     * Starting the transaction node2:
 
@@ -100,51 +100,51 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 
     *  We can find node1 [enode](https://eth.wiki/en/fundamentals/enode-url-format) value in the mining terminal when we activate it. Also, we can see that node1 is using 30303 port while we assign port 30304 to node2.
 
-* ![enode](images/Screen_Shot16.png)
+    ![enode](images/Screen_Shot16.png)
 
     * Next, we input our node2 password to unlock the account.
 
-* ![unlock_transaction](images/Screen_Shot14.png)
+    ![unlock_transaction](images/Screen_Shot14.png)
 
-* ![transaction_node](images/Screen_Shot12.png)
+    ![transaction_node](images/Screen_Shot12.png)
 
     * Now we have our blockchain comprised of node1 and node2 up and running.
 
-* ![blockchain](images/Screen_Shot15.png)
+    ![blockchain](images/Screen_Shot15.png)
 
 * The next step is to setup a custom network "dragancoin" and connect to it from MyCrypto account so we can initiate the transaction from node1 to node2.
 
-* ![custom_node](images/Screen_Shot13.png)
+    ![custom_node](images/Screen_Shot13.png)
 
 * Now we can send a transaction from the node1 to node2.
     * First, we need to access the account by accessing our private key in the keystore folder and input the password for node1 account. 
 
-* ![private_key](images/Screen_Shot19.png)
+    ![private_key](images/Screen_Shot19.png)
 
     * The private key is located in the keystore folder in node1 and node2. 
 
-* ![keystore](images/Screen_Shot9.png)
+    ![keystore](images/Screen_Shot9.png)
 
     * Then, we complete the transaction details, verify it and send.
 
-* ![transaction](images/Screen_Shot18.png)
+    ![transaction](images/Screen_Shot18.png)
 
-* ![verify_transaction](images/Screen_Shot20.png)
+    ![verify_transaction](images/Screen_Shot20.png)
 
     * The transaction has been broadcasted to the blockchain network.
 
-* ![transaction_broadcast](images/Screen_Shot17.png)
+    ![transaction_broadcast](images/Screen_Shot17.png)
 
 #
 ### Verification of Transaction Completion
 #
 * The last step is to verify in MyCrypto account that the transaction has been processed successfully. We do this by checking the TX status.
 
-* ![tx_status](images/Screen_Shot21.png)
+    ![tx_status](images/Screen_Shot21.png)
 
-* ![transaction_pending](images/Screen_Shot22.png)
+    ![transaction_pending](images/Screen_Shot22.png)
 
-* ![transaction_complete](images/Screen_Shot23.png)
+    ![transaction_complete](images/Screen_Shot23.png)
 
 * We can see that the transaction has been processed successfully on our newly created dragancoin custom network.
 #
