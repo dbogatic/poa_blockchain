@@ -82,7 +82,7 @@ Image Source: [Rice FinTech Bootcamp Student Activity Page](https://rice.bootcam
 #
 ### Send a Test Transaction
 #
-* Once we setup our node1 and node2, created passwords and initiated Nodes, we can start the blockchain. We do this by opening two terminals, where the first will be our mining node1 and the second one will be the transaction node2.
+* Once we setup our node1 and node2, created passwords and initiated nodes, we can start the blockchain. We do this by opening two terminals, where the first will be our mining node1 and the second one will be the transaction node2.
 
     * Starting the mining node1:
 
